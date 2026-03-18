@@ -1,5 +1,5 @@
 {% set name = "upstash-redis" %}
-{% set version = "1.6.0" %}
+{% set version = "1.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/upstash_redis-{{ version }}.tar.gz
-  sha256: 23ae31acac3c95e5a9c1e732657c9b195ddda511c687021f9e9fd4a795606925
+  sha256: 19b46dff2d81b89da5cbfb23a38232f7ca3b9ba441b22a1df766c64972d936d1
 
 build:
   noarch: python
