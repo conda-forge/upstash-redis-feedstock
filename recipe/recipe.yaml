@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: upstash-redis
-  version: 1.9.0
+  version: 1.10.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/upstash_redis-${{ version }}.tar.gz
-  sha256: a970603791101271ad30eaa9e68de4678b653c09f373864188452c23938a9b19
+  sha256: b3523de773d580ca254c63880af2535c62ee0ab423fe78aedfe0c3c35b04fe7d
 
 build:
   number: 0
@@ -25,6 +25,7 @@ requirements:
   run:
     - httpx >=0.23.0,<1
     - python >=${{ python_min }},<4.0.0
+    - anyio >=4.14.2
 tests:
   - python:
       imports:
